@@ -7,8 +7,8 @@
         "test": "jest",
         "test:back": "jest ./tests/backend",
         "test:front": "jest ./tests/frontend",
-        "start": "node server.js",
-        "dev": "nodemon server.js"
+        "start": "node src/server.js",
+        "dev": "nodemon src/server.js"
     },
     "devDependencies": {
         "@babel/core": "^7.26.0",
