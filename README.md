@@ -104,4 +104,4 @@ $$
 
 Portanto, o vencedor é **A**!
 
-O desafio será desenvolver um código para seguir essa lógica e dinâmica de jogo e demonstrar em uma interface web, dentro de um template já pré-definido, em cards que mostrem os atributos dos dois linguagens da batalha, além de uma forma de indicar o vencedor. Além disso, as linguagens devem ser obtidos a partir do consumo de uma API já pronta e disponível localmente.
+O desafio será desenvolver um código para seguir essa lógica e dinâmica de jogo e demonstrar em uma interface web, dentro de um template já pré-definido, em cards que mostrem os atributos dos dois linguagens da batalha, além de uma forma de indicar o vencedor. A parte do backend será responsável por sortear os lutadores e calcular o resultado das lutas, enquanto que o frontend será responsável por acionar esses eventos e mostrar em tela.
