@@ -62,7 +62,7 @@ Sobre as **Categorias**, eles têm a capacidade de aplicar um multiplicador em u
 
 -   **Backend** ganha de **Frontend**: É aplicado um multiplicador de 1.2 à **Performance**;
 -   **Frontend** ganha de **Full Stack**: É aplicado um multiplicador de 1.5 à **Popularidade**;
--   **Full Stack** ganha de **Database**: É aplicado um multiplicador de 1.4 à **Flexibilidade**;
+-   **Full Stack** ganha de **Database** e **Backend**: É aplicado um multiplicador de 1.4 à **Flexibilidade**;
 -   **Database** ganha de **Frontend** e **Backend**: É aplicado um multiplicador de 1.7 à **Compatibilidade**;
 -   Categorias **iguais** não aplicam multiplicadores.
 
