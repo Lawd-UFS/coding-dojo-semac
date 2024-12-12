@@ -52,10 +52,7 @@ $$
 A **Potência** é feita com base na **Popularidade** e na **Compatibilidade**, através do cálculo da média ponderada dos dois atributos dividida por 10, sendo que a **Popularidade** tem peso 7 e a **Compatibilidade** tem peso 3.
 
 $$
-\text{Potência} =
-\frac{
-  \frac{\text{Popularidade} \cdot 7 + \text{Compatibilidade} \cdot 3}{10}
-}{10}
+\text{Potência} = \frac{ \frac{\text{Popularidade} \cdot 7 + \text{Compatibilidade} \cdot 3}{10}}{10}
 $$
 
 Sobre as **Categorias**, eles têm a capacidade de aplicar um multiplicador em um dos atributos, se a **Categoria** da carta tiver vantagem sobre a **Categoria** do oponente:
