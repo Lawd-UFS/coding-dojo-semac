@@ -31,13 +31,13 @@ E esse deve ser o fluxo, cíclico e contínuo, durante todo o desenvolvimento. A
 
 ## O Desafio
 
-O desafio envolve um jogo de batalha de linguagens de programação web, onde cada carta de linguagem possui valores de **0 a 10** para os seguintes atributos:
+O desafio envolve um jogo de batalha de tecnologias web, onde cada carta de tecnologia possui valores de **0 a 10** para os seguintes atributos:
 
--   **Performance**: avalia a velocidade e a eficiência da linguagem. (0 a 10)
--   **Flexibilidade**: mede a capacidade da linguagem de se adaptar a diferentes contextos. (0 a 10)
--   **Popularidade**: representa o número de desenvolvedores que usam ou conhecem a linguagem. (0 a 10)
--   **Compatibilidade**: avalia a integração da linguagem com frameworks e tecnologias web. (0 a 10)
--   **Categoria**: A categoria da linguagem é representada por um dos seguintes valores:
+-   **Desempenho**: avalia a velocidade e a eficiência da tecnologia. (0 a 10)
+-   **Flexibilidade**: mede a capacidade da tecnologia de se adaptar a diferentes contextos. (0 a 10)
+-   **Popularidade**: representa o número de desenvolvedores que usam ou conhecem a tecnologia. (0 a 10)
+-   **Compatibilidade**: avalia a integração da tecnologia com frameworks e tecnologias web. (0 a 10)
+-   **Categoria**: A categoria da tecnologia é representada por um dos seguintes valores:
     -   **Frontend**: Linguagens voltadas para o desenvolvimento do lado do cliente.
     -   **Backend**: Linguagens para o desenvolvimento do lado do servidor.
     -   **Full Stack**: Linguagens que podem ser usadas tanto no lado do cliente quanto do servidor.
@@ -46,7 +46,7 @@ O desafio envolve um jogo de batalha de linguagens de programação web, onde ca
 A batalha funciona através da verificação do maior valor do cálculo dos atributos entre as duas linguagens, onde o cálculo é feito através da seguinte fórmula:
 
 $$
-\text{Resultado} = \left( \frac{\text{Performance}}{\text{Flexibilidade do oponente}} \right) \cdot \text{Potência}
+\text{Resultado} = \left( \frac{\text{Desempenho}}{\text{Flexibilidade do oponente}} \right) \cdot \text{Potência}
 $$
 
 A **Potência** é feita com base na **Popularidade** e na **Compatibilidade**, através do cálculo da média ponderada dos dois atributos dividida por 10, sendo que a **Popularidade** tem peso 7 e a **Compatibilidade** tem peso 3.
@@ -57,7 +57,7 @@ $$
 
 Sobre as **Categorias**, eles têm a capacidade de aplicar um multiplicador em um dos atributos, se a **Categoria** da carta tiver vantagem sobre a **Categoria** do oponente:
 
--   **Backend** ganha de **Frontend**: É aplicado um multiplicador de 1.2 à **Performance**;
+-   **Backend** ganha de **Frontend**: É aplicado um multiplicador de 1.2 à **Desempenho**;
 -   **Frontend** ganha de **Full Stack**: É aplicado um multiplicador de 1.5 à **Popularidade**;
 -   **Full Stack** ganha de **Database** e **Backend**: É aplicado um multiplicador de 1.4 à **Flexibilidade**;
 -   **Database** ganha de **Frontend** e **Backend**: É aplicado um multiplicador de 1.7 à **Compatibilidade**;
@@ -65,15 +65,15 @@ Sobre as **Categorias**, eles têm a capacidade de aplicar um multiplicador em u
 
 **Exemplo**:
 
-| Atributos           | Linguagem A | Linguagem B |
-| ------------------- | ----------- | ----------- |
-| **Performance**     | 5           | 7           |
-| **Flexibilidade**   | 8           | 6           |
-| **Popularidade**    | 8           | 5           |
-| **Compatibilidade** | 6           | 9           |
-| **Categoria**       | Backend     | Frontend    |
+| Atributos           | Tecnologia A | Tecnologia B |
+| ------------------- | ------------ | ------------ |
+| **Desempenho**      | 5            | 7            |
+| **Flexibilidade**   | 8            | 6            |
+| **Popularidade**    | 8            | 5            |
+| **Compatibilidade** | 6            | 9            |
+| **Categoria**       | Backend      | Frontend     |
 
-Nesse exemplo, a linguagem A tem vantagem de elemento de **Backend**, por isso ele recebe um multiplicador de 1.2 no atributo de **Performance**, o cálculo fica assim:
+Nesse exemplo, a tecnologia A tem vantagem de elemento de **Backend**, por isso ele recebe um multiplicador de 1.2 no atributo de **Desempenho**, o cálculo fica assim:
 
 $$
 \text{A} = \left( {\frac{5 \cdot 1.2} {6}} \right) \cdot \frac{\frac {8 \cdot 7 + 6 \cdot 3} {10}} {10}
