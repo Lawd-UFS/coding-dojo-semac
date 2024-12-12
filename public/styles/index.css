@@ -107,7 +107,7 @@
   width: 300px;
 }
 
-.card {
+.use-card {
   margin-top: 10px;
   background: var(--full-white);
   border: 2px solid var(--low-purple);
@@ -160,7 +160,7 @@
   margin-top: 20px;
 }
 
-.score {
+.use-score {
   border: 2px solid var(--low-purple);
   border-radius: 10px;
   font-size: 24px;
@@ -169,15 +169,15 @@
   width: 300px;
 }
 
-.arrow {
+.use-arrow {
   align-items: center;
   height: 64px;
 }
 
-.arrow {
+.use-arrow {
   filter: red;
 }
-.arrow.left {
+.use-arrow.left {
   rotate: 180deg;
 }
 
