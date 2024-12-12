@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dojo da LAWD</title>
+
+  <link rel="icon" href="assets/treinai-white-logo.png">
+
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/dojo.css">
+
+  <script src="./scripts/index.js" defer></script>
+  <script src="./scripts/dojo.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logos">
+        <img class="logo lawd" src="assets/lawd-logo.png">
+        <img class="logo dcomp" src="assets/dcomp-logo.png">
+      </div>
+      <div class="title">Dojo da LAWD</div>
+      <img class="logo ufs" src="assets/ufs-logo.png" alt="">
+    </header>
+    <main class="main">
+      <section class="full-ring">
+        <div class="ring">
+          <div class="card"></div> <!-- Linguagem 1 -->
+          <div class="vs">
+            <img class="gloves" src="assets/gloves.png" alt="Luvas de boxe">
+            <div class="fight">
+              <button>Fight!</button>
+            </div>
+          </div>
+          <div class="card"></div> <!-- Linguagem 2 -->
+        </div>
+    
+        <div class="scores">
+
+          <div class="score"></div> <!-- Score 1 -->
+
+          <div class="winner">
+						<img class="arrow winner left "src="assets/arrow.svg"> <!-- Seta Esquerda -->
+						<span class="winner-name">Ganhador</span>
+						<img class="arrow winner right" src="assets/arrow.svg"> <!-- Seta Direita -->
+					</div>
+
+          <div class="score"></div> <!-- Score 2 -->
+        </div>
+
+      </section>
+
+    </main>
+
+    <aside class="history closed">
+      <header class="history-header">
+        <h3>Histórico</h3>
+      </header>
+      <ul>
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+      </ul>
+    </aside>
+
+    <button class="toggle-history off" aria-label="Abrir histórico">&lt;</button>
+
+    <footer>
+      <div id="copyright">
+        <p>
+          Desenvolvido por <a href="https://www.linkedin.com/in/gabrielargolo/" target="_blank">@argologabriel</a> para o Code Dojo da <a class="lawd" href="https://github.com/Lawd-UFS" target="_blank">@LAWD</a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
