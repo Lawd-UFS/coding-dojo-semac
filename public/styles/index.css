@@ -25,8 +25,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 0;
-  padding: 0;
+  min-width: 950px;
 }
 
 .header {
@@ -34,23 +33,24 @@
   background-color: var(--low-purple);
   color: var(--bg-color);
   display: flex;
-  height: 96px;
+  height: 64px;
   justify-content: space-between;
   padding: 10px 20px;
 }
 
 .header .logos {
+  height: 100%;
   display: flex;
   gap: 24px;
 }
 
 .header .logo {
-  height: 96px;
+  height: 90%;
 }
 
 .header .title {
   align-items: center;
-  display: flex; 
+  display: flex;
   font-size: 32px;
   font-weight: bold;
 }
@@ -60,8 +60,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
-  padding: 20px;
+  margin-block: 10px;
 }
 
 .full-ring {
@@ -69,9 +68,10 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  padding: 30px;
+  margin-block: 10px;
+  padding: 20px;
   text-align: center;
+  height: 100%;
 }
 
 .use-new-battle {
@@ -87,12 +87,17 @@
 }
 
 .ring {
-  align-items: center;
   display: flex;
-  gap: 30px;
+  flex-grow: 1;
   justify-content: space-between;
   margin-bottom: 20px;
   min-width: 70%;
+}
+
+.fighter {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .fighter button {
@@ -112,7 +117,7 @@
   background: var(--full-white);
   border: 2px solid var(--low-purple);
   border-radius: 10px;
-  min-height: 320px;
+  height: 100%;
   padding: 20px;
   text-align: center;
   width: 300px;
@@ -142,11 +147,11 @@
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
-  padding: 10px 40px
+  padding: 10px 40px;
 }
 
 .fight button:hover,
-.fighter button:hover, 
+.fighter button:hover,
 .use-new-battle:hover {
   background-color: var(--hight-purple);
   transition: 0.3s;
@@ -194,7 +199,6 @@
 .winner-name {
   align-items: center;
   display: flex;
-
 }
 
 .history {
@@ -264,14 +268,13 @@
 
 .off {
   right: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .on {
   right: 300px;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 
 .toggle-history:hover {
   background-color: var(--hight-purple);
@@ -279,25 +282,25 @@
 
 #copyright {
   background-color: var(--low-purple);
-	color: var(--full-white);
-	font-weight: 600;
-	font-size: 1.125em;
-  padding: 1.5em 5em
+  color: var(--full-white);
+  font-weight: 600;
+  font-size: 1.125em;
+  padding: 1.5em 5em;
 }
 
 #copyright p {
-	text-align: center;
+  text-align: center;
 }
 
 #copyright p a {
-	color: var(--text-color);
-	font-weight: bold;
+  color: var(--text-color);
+  font-weight: bold;
 }
 
 #copyright p a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 #copyright .lawd {
-	color: var(--text-color);
+  color: var(--text-color);
 }
