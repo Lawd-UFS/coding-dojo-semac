@@ -20,6 +20,12 @@
   text-decoration: none;
 }
 
+button:disabled,
+button:disabled:hover {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 #container {
   background-color: var(--bg-color);
   display: flex;
@@ -150,8 +156,8 @@
   padding: 10px 40px;
 }
 
-.fight button:hover,
-.fighter button:hover,
+.fight button:not(:disabled):hover,
+.fighter button:not(:disabled):hover,
 .use-new-battle:hover {
   background-color: var(--hight-purple);
   transition: 0.3s;
