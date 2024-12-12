@@ -288,14 +288,13 @@ button:disabled:hover {
 
 #copyright {
   background-color: var(--low-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--full-white);
   font-weight: 600;
   font-size: 1.125em;
-  padding: 1.5em 5em;
-}
-
-#copyright p {
-  text-align: center;
+  height: 64px;
 }
 
 #copyright p a {
