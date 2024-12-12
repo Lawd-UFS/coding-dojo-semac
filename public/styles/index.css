@@ -170,13 +170,16 @@
 
 .use-arrow {
   align-items: center;
-  height: 64px;
+  height: 40px;
+  width: 80px;
 }
 
-.use-arrow {
-  filter: red;
+.use-arrow polygon {
+  fill: none;
+  stroke: var(--low-purple);
 }
-.use-arrow.left {
+
+.use-arrow.right {
   rotate: 180deg;
 }
 
