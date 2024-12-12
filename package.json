@@ -5,8 +5,8 @@
     "license": "MIT",
     "scripts": {
         "test": "jest",
-        "test:back": "jest ./tests/backend",
-        "test:front": "jest ./tests/frontend",
+        "test:backend": "jest ./tests/backend",
+        "test:frontend": "jest ./tests/frontend",
         "start": "node src/server.js",
         "dev": "nodemon src/server.js"
     },
