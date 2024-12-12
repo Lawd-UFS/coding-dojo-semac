@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dojo da LAWD</title>
+
+  <link rel="icon" href="assets/treinai-white-logo.png">
+
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/dojo.css">
+
+  <script src="./scripts/index.js" defer></script>
+  <script src="./scripts/dojo.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="container">
+    <header class="header">
+
+      <div class="logos">
+        <img class="logo lawd" src="assets/lawd-logo.png">
+        <img class="logo dcomp" src="assets/dcomp-logo.png">
+      </div>
+
+      <div class="title">Dojo da LAWD</div>
+
+      <img class="logo ufs" src="assets/ufs-logo.png" alt="">
+
+    </header>
+
+    <main class="main">
+
+      <button class="use-new-battle">Nova Batalha</button> <!-- Botão para iniciar uma nova batalha -->
+
+      <section class="full-ring">
+        <div class="ring">
+
+          <div class="fighter">
+            <button class="use-button-fighter">Buscar Lutador 1</button> <!-- Botão para buscar o lutador 1 -->
+            <div class="use-card"></div> <!-- Linguagem 1 -->
+          </div>
+          
+
+          <div class="vs">
+            <img class="gloves" src="assets/gloves.png">
+            <div class="fight">
+              <button>Fight!</button>
+            </div>
+          </div>
+
+          <div class="fighter">
+            <button class="use-button-fighter" disabled>Buscar Lutador 2</button> <!-- Botão para buscar o lutador 1 -->
+            <div class="use-card"></div> <!-- Linguagem 2 -->
+          </div> 
+
+        </div>
+    
+        <div class="scores">
+
+          <div class="use-score"></div> <!-- Score 1 -->
+
+          <div class="winner">
+						<img class="use-arrow left "src="assets/arrow.svg"> <!-- Seta Esquerda -->
+
+						<span class="winner-name">Ganhador</span>
+            
+						<img class="use-arrow right" src="assets/arrow.svg"> <!-- Seta Direita -->
+					</div>
+
+          <div class="use-score"></div> <!-- Score 2 -->
+
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="history closed">
+
+      <header class="history-header">
+        <h3>Histórico</h3>
+      </header>
+      
+      <!-- Itens do Histórico -->
+
+      <ul class="use-history">
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+      </ul>
+
+      <!-- Itens do Histórico -->
+
+    </aside>
+
+    <button class="toggle-history off">&lt;</button>
+
+    <footer>
+      <div id="copyright">
+        <p>
+          Desenvolvido por <a href="https://www.linkedin.com/in/gabrielargolo/" target="_blank">@argologabriel</a> para o Code Dojo da <a class="lawd" href="https://github.com/Lawd-UFS" target="_blank">@LAWD</a>
+        </p>
+      </div>
+    </footer>
+</body>
+</html>

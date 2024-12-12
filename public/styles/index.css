@@ -1,0 +1,300 @@
+:root {
+  --bg-color: #f8f8f8;
+  --border-color: #ddd;
+  --full-white: #fff;
+  --hight-purple: #470069;
+  --low-purple: #7f3bb0;
+  --text-color: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: weight;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+#container {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  align-items: center;
+  background-color: var(--low-purple);
+  color: var(--bg-color);
+  display: flex;
+  height: 96px;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.header .logos {
+  display: flex;
+  gap: 24px;
+}
+
+.header .logo {
+  height: 96px;
+}
+
+.header .title {
+  align-items: center;
+  display: flex; 
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.full-ring {
+  border: 2px solid var(--low-purple);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.use-new-battle {
+  background-color: var(--low-purple);
+  border: 2px solid var(--full-white);
+  border-radius: 10px;
+  color: var(--full-white);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 40px;
+  width: 250px;
+}
+
+.ring {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  min-width: 70%;
+}
+
+.fighter button {
+  background-color: var(--low-purple);
+  border: 2px solid var(--full-white);
+  border-radius: 10px;
+  color: var(--full-white);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 40px;
+  width: 300px;
+}
+
+.use-card {
+  margin-top: 10px;
+  background: var(--full-white);
+  border: 2px solid var(--low-purple);
+  border-radius: 10px;
+  min-height: 320px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.vs {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.gloves {
+  width: 216px;
+}
+
+.fight {
+  display: flex;
+  justify-content: center;
+}
+
+.fight button {
+  background-color: var(--low-purple);
+  border: 2px solid var(--full-white);
+  border-radius: 10px;
+  color: var(--full-white);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px 40px
+}
+
+.fight button:hover,
+.fighter button:hover, 
+.use-new-battle:hover {
+  background-color: var(--hight-purple);
+  transition: 0.3s;
+}
+
+.scores {
+  align-items: center;
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+}
+
+.use-score {
+  border: 2px solid var(--low-purple);
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  width: 300px;
+}
+
+.use-arrow {
+  align-items: center;
+  height: 64px;
+}
+
+.use-arrow {
+  filter: red;
+}
+.use-arrow.left {
+  rotate: 180deg;
+}
+
+.winner {
+  color: var(--low-purple);
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  gap: 30px;
+}
+
+.winner-name {
+  align-items: center;
+  display: flex;
+
+}
+
+.history {
+  background-color: var(--full-white);
+  border-left: 2px solid var(--hight-purple);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: fixed;
+  right: -300px;
+  top: 0;
+  transition: right 0.3s ease;
+  width: 300px;
+}
+
+.history.closed {
+  right: -300px;
+}
+
+.history.open {
+  right: 0;
+}
+
+.history-header {
+  align-items: center;
+  background-color: var(--hight-purple);
+  color: var(--full-white);
+  display: flex;
+  justify-content: center;
+  height: 96px;
+  padding: 10px;
+}
+
+.history h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.history ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.history li {
+  border: 2px solid var(--low-purple);
+  border-radius: 10px;
+  color: var(--low-purple);
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+  padding: 10px;
+}
+
+.toggle-history {
+  background-color: var(--low-purple);
+  border: none;
+  border-radius: 5px 0 0 5px;
+  color: var(--full-white);
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.off {
+  right: 0;
+  transition: .3s;
+}
+
+.on {
+  right: 300px;
+  transition: .3s;
+}
+
+
+.toggle-history:hover {
+  background-color: var(--hight-purple);
+}
+
+#copyright {
+  background-color: var(--low-purple);
+	color: var(--full-white);
+	font-weight: 600;
+	font-size: 1.125em;
+  padding: 1.5em 5em
+}
+
+#copyright p {
+	text-align: center;
+}
+
+#copyright p a {
+	color: var(--text-color);
+	font-weight: bold;
+}
+
+#copyright p a:hover {
+	text-decoration: underline;
+}
+
+#copyright .lawd {
+	color: var(--text-color);
+}
